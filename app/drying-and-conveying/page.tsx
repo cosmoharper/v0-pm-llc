@@ -52,9 +52,9 @@ export default function DryingAndConveyingPage() {
               <Image
                 src="/images/drying-conveying-head.png"
                 alt="Drying and Conveying Equipment"
-                width={800}
+                width={250}
                 height={300}
-                className="w-full h-auto"
+                className="h-auto"
               />
             </div>
 
