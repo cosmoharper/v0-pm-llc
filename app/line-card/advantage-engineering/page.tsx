@@ -57,13 +57,13 @@ export default function AdvantageEngineeringPage() {
             <div className="flex flex-wrap gap-4">
               <Link 
                 href="/request-quote" 
-                className="inline-block bg-[#F9D85C] hover:bg-[#E5C654] text-[#1a1a1a] font-bold px-6 py-3 transition-colors"
+                className="inline-block bg-[#367CA4] hover:bg-[#2d6a8f] text-white font-bold px-6 py-3 transition-colors"
               >
                 Request a Quote
               </Link>
               <Link 
                 href="/contact-plastics-machinery" 
-                className="inline-block bg-[#1a1a1a] hover:bg-[#333333] text-white font-bold px-6 py-3 transition-colors"
+                className="inline-block bg-[#367CA4] hover:bg-[#2d6a8f] text-white font-bold px-6 py-3 transition-colors"
               >
                 Contact Us
               </Link>

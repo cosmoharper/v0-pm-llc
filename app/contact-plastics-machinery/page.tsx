@@ -190,7 +190,7 @@ export default function ContactPlasticsMachineryPage() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="bg-[#F9D85C] hover:bg-[#E5C654] text-[#1a1a1a] font-bold px-6 py-3 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="bg-[#367CA4] hover:bg-[#2d6a8f] text-white font-bold px-6 py-3 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? 'Submitting...' : 'Submit'}
               </button>
