@@ -63,7 +63,7 @@ const brands = [
     image: "/images/brands/dynacon.jpg",
     logo: "/images/brands/logos/dynacon-logo.svg",
     shortDescription: "Flexible modular conveyor systems for manufacturing",
-    hasLogoOverlay: true,
+    hasLogoOverlay: false,
   },
   {
     name: "Sepro Group",
