@@ -28,12 +28,12 @@ export default function NovatecPage() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Image */}
-          <div className="relative aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
+          <div className="relative aspect-[4/3] bg-black rounded-lg overflow-hidden">
             <Image
-              src="/images/brands/novatec.jpg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2818%29.png-46qxRq33UAwqhLLtFRpEldzXO8dGOM.jpeg"
               alt="Novatec resin drying equipment"
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
 
@@ -62,13 +62,13 @@ export default function NovatecPage() {
             <div className="flex flex-wrap gap-4">
               <Link 
                 href="/request-quote" 
-                className="inline-block bg-[#F9D85C] hover:bg-[#E5C654] text-[#1a1a1a] font-bold px-6 py-3 transition-colors"
+                className="inline-block bg-[#367CA4] hover:bg-[#2d6a8f] text-white font-bold px-6 py-3 transition-colors"
               >
                 Request a Quote
               </Link>
               <Link 
                 href="/contact-plastics-machinery" 
-                className="inline-block bg-[#1a1a1a] hover:bg-[#333333] text-white font-bold px-6 py-3 transition-colors"
+                className="inline-block bg-[#367CA4] hover:bg-[#2d6a8f] text-white font-bold px-6 py-3 transition-colors"
               >
                 Contact Us
               </Link>
