@@ -14,7 +14,7 @@ const repHeadshots: Record<string, string> = {
   "John Greer": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/john-TYeMcYo6dgEmrpjfYYrHbYXrfiHF6i.png",
   "Chuck Thiele, Jr.": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chuck-kPZMLv3nwirxAKKPQ4qXWmZG1w24T1.png",
   // Placeholder for reps without headshots
-  "default": "https://i.imgur.com/yXOvdOSs.jpg" // Rick Astley placeholder
+  "default": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rick-astley-mzJehpKLE9wLuvUBXMPy383iFMusz0.webp" // Rick Astley placeholder
 }
 
 export default function ContactPlasticsMachineryPage() {
