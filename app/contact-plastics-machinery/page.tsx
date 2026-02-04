@@ -13,6 +13,7 @@ const repHeadshots: Record<string, string> = {
   "Allen Reeves": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/allen-iY7cohAQ2dJiFTX4CfWRTqgUMPDJF8.png",
   "John Greer": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/john-TYeMcYo6dgEmrpjfYYrHbYXrfiHF6i.png",
   "Chuck Thiele, Jr.": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chuck-kPZMLv3nwirxAKKPQ4qXWmZG1w24T1.png",
+  "Charles Husain": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Charles%20at%20PM%20LLC-s37gwQt73yu1fDXJEZSjbco6S5SKsq.jpg",
   // Placeholder for reps without headshots
   "default": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rick-astley-mzJehpKLE9wLuvUBXMPy383iFMusz0.webp" // Rick Astley placeholder
 }
