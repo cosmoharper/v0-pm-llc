@@ -134,15 +134,16 @@ export default function LineCardPage() {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                {/* Logo Overlay - only show for brands that need it */}
+                {/* Logo Overlay - styled horizontal band similar to baked-in cards */}
                 {brand.hasLogoOverlay && (
-                  <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-                    <div className="relative w-3/4 h-1/2">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-24 bg-gray-800/85" />
+                    <div className="relative w-3/4 h-16 z-10">
                       <Image
                         src={brand.logo || "/placeholder.svg"}
                         alt={`${brand.name} logo`}
                         fill
-                        className="object-contain drop-shadow-lg"
+                        className="object-contain drop-shadow-md"
                       />
                     </div>
                   </div>
