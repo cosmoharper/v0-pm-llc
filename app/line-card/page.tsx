@@ -34,7 +34,7 @@ const brands = [
     name: "Advantage Engineering",
     slug: "advantage-engineering",
     image: "/images/brands/advantage.jpg",
-    logo: "/images/brands/logos/advantage-logo.svg",
+    logo: "/images/brands/logos/advantage-logo.png",
     shortDescription: "Industrial heat transfer products including chillers and temperature control",
   },
   {
@@ -70,14 +70,14 @@ const brands = [
     name: "Bay Plastics Machinery",
     slug: "bay-plastics-machinery",
     image: "/images/brands/bay-plastics.jpg",
-    logo: "/images/brands/logos/bay-plastics-logo.svg",
+    logo: "/images/brands/logos/bay-plastics-logo.png",
     shortDescription: "Strand pelletizers, conveyors, water baths and accessories",
   },
   {
     name: "H-P Products",
     slug: "hp-products",
     image: "/images/brands/hp-products.jpg",
-    logo: "/images/brands/logos/hp-products-logo.svg",
+    logo: "/images/brands/logos/hp-products-logo.png",
     shortDescription: "Tubing, bends, and fittings for vacuum conveying",
   },
 ]
