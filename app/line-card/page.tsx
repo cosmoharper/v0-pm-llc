@@ -52,7 +52,7 @@ const brands = [
   {
     name: "Novatec",
     slug: "novatec",
-    image: "/images/brands/novatec.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%281%29.png-WMliaaHBU7C8wSx0t6Rqv9mxcWyhqU.jpeg",
     logo: "/images/brands/logos/novatec-logo.png",
     shortDescription: "Resin dryers, conveying and blending systems for plastics",
     hasLogoOverlay: true,
