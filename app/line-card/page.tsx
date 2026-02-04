@@ -39,7 +39,7 @@ const brands = [
     image: "/images/brands/advantage.jpg",
     logo: "/images/brands/logos/advantage-logo.png",
     shortDescription: "Industrial heat transfer products including chillers and temperature control",
-    hasLogoOverlay: true,
+    hasLogoOverlay: false,
   },
   {
     name: "Rapid Granulator",
