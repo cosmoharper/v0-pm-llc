@@ -15,7 +15,7 @@ const brands = [
     image: "/images/brands/shibaura.jpg",
     logo: "/images/brands/logos/shibaura-logo.svg",
     shortDescription: "High precision electric and servo hydraulic molding machines",
-    hasLogoOverlay: true,
+    hasLogoOverlay: false,
   },
   {
     name: "Graham Engineering",
@@ -31,7 +31,7 @@ const brands = [
     image: "/images/brands/xaloy.jpg",
     logo: "/images/brands/logos/xaloy-logo.svg",
     shortDescription: "Screws, barrels and front-end components for extrusion and injection",
-    hasLogoOverlay: true,
+    hasLogoOverlay: false,
   },
   {
     name: "Advantage Engineering",
@@ -71,7 +71,7 @@ const brands = [
     image: "/images/brands/sepro.jpg",
     logo: "/images/brands/logos/sepro-logo.svg",
     shortDescription: "3-axis, 5-axis and 6-axis robots for injection molding",
-    hasLogoOverlay: true,
+    hasLogoOverlay: false,
   },
   {
     name: "Bay Plastics Machinery",
