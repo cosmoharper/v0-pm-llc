@@ -4,6 +4,18 @@ import React from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { useState } from "react"
+import Image from "next/image"
+
+// Headshot images for sales reps
+const repHeadshots: Record<string, string> = {
+  "Sam Shellabarger": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sam-i3JSTCLzgzL4IBfixxXRhg0BFfoWWm.png",
+  "Luke Miller": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/luke-rKw6co7gpGkMPzwe5OtrBPs2nuFV2K.png",
+  "Allen Reeves": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/allen-iY7cohAQ2dJiFTX4CfWRTqgUMPDJF8.png",
+  "John Greer": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/john-TYeMcYo6dgEmrpjfYYrHbYXrfiHF6i.png",
+  "Chuck Thiele, Jr.": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chuck-kPZMLv3nwirxAKKPQ4qXWmZG1w24T1.png",
+  // Placeholder for reps without headshots
+  "default": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rick-astley-mzJehpKLE9wLuvUBXMPy383iFMusz0.webp" // Rick Astley placeholder
+}
 
 export default function ContactPlasticsMachineryPage() {
   const [formData, setFormData] = useState({
@@ -190,7 +202,7 @@ export default function ContactPlasticsMachineryPage() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="bg-[#F9D85C] hover:bg-[#E5C654] text-[#1a1a1a] font-bold px-6 py-3 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="bg-[#367CA4] hover:bg-[#2d6a8f] text-white font-bold px-6 py-3 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? 'Submitting...' : 'Submit'}
               </button>
@@ -237,8 +249,14 @@ export default function ContactPlasticsMachineryPage() {
                 <div className="space-y-4">
                   {region.reps.map((rep, idx) => (
                     <div key={idx} className="flex items-start gap-4">
-                      <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center shrink-0">
-                        <span className="text-gray-500 text-xl">{rep.name.charAt(0)}</span>
+                      <div className="w-16 h-16 rounded-full overflow-hidden shrink-0 bg-gray-200">
+                        <Image
+                          src={repHeadshots[rep.name] || repHeadshots["default"]}
+                          alt={rep.name}
+                          width={64}
+                          height={64}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                       <div>
                         <p className="font-bold text-[#1a1a1a]">{rep.name}</p>
