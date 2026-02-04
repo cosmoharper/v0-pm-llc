@@ -48,7 +48,7 @@ export default function DryingAndConveyingPage() {
 
           {/* Main Content */}
           <div className="flex-1">
-            <div className="mb-8">
+            <div className="mb-8 flex justify-center">
               <Image
                 src="/images/drying-conveying-head.png"
                 alt="Drying and Conveying Equipment"
