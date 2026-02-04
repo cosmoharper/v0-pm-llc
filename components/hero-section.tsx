@@ -26,7 +26,7 @@ export function HeroSection() {
         </h2>
         <Link
           href="/request-quote"
-          className="inline-block bg-[#367CA4] hover:bg-[#2d6a8f] text-white font-bold text-base md:text-lg px-8 py-4 uppercase tracking-wide transition-colors"
+          className="inline-block bg-[#F9D85C] hover:bg-[#E5C654] text-[#1a1a1a] font-bold text-base md:text-lg px-8 py-4 uppercase tracking-wide transition-colors"
         >
           Request a Quote
         </Link>

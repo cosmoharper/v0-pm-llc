@@ -28,12 +28,12 @@ export default function NovatecPage() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Image */}
-          <div className="relative aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
+          <div className="relative aspect-[4/3] bg-black rounded-lg overflow-hidden">
             <Image
               src="/images/brands/novatec.jpg"
               alt="Novatec resin drying equipment"
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
 

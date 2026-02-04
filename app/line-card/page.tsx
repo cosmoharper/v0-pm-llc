@@ -52,7 +52,7 @@ const brands = [
   {
     name: "Novatec",
     slug: "novatec",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%281%29.png-WMliaaHBU7C8wSx0t6Rqv9mxcWyhqU.jpeg",
+    image: "/images/brands/novatec.jpg",
     logo: "/images/brands/logos/novatec-logo.png",
     shortDescription: "Resin dryers, conveying and blending systems for plastics",
     hasLogoOverlay: true,
@@ -133,13 +133,12 @@ export default function LineCardPage() {
               href={`/line-card/${brand.slug}`}
               className="group bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
             >
-              <div className={`relative aspect-[4/3] ${brand.slug === "novatec" ? "bg-black" : "bg-gray-100"}`}>
+              <div className="relative aspect-[4/3] bg-gray-100">
                 <Image
                   src={brand.image || "/placeholder.svg"}
                   alt={brand.name}
                   fill
-                  priority={["shibaura-machine", "graham-engineering", "xaloy", "advantage-engineering"].includes(brand.slug)}
-                  className={`${brand.slug === "novatec" ? "object-contain" : "object-cover"} group-hover:scale-105 transition-transform duration-300`}
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 {/* Logo Overlay - styled horizontal band similar to baked-in cards */}
                 {brand.hasLogoOverlay && (
