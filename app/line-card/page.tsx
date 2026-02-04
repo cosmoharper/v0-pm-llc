@@ -138,6 +138,7 @@ export default function LineCardPage() {
                   src={brand.image || "/placeholder.svg"}
                   alt={brand.name}
                   fill
+                  priority={brand.slug === "shibaura-machine"}
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 {/* Logo Overlay - styled horizontal band similar to baked-in cards */}
