@@ -137,7 +137,7 @@ export default function LineCardPage() {
                 {/* Logo Overlay - styled horizontal band similar to baked-in cards */}
                 {brand.hasLogoOverlay && (
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-24 bg-gray-800/85" />
+                    <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-[220px] bg-[rgba(255,255,255,1)] opacity-65" />
                     <div className="relative w-3/4 h-16 z-10">
                       <Image
                         src={brand.logo || "/placeholder.svg"}
