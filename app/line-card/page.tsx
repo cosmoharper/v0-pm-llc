@@ -15,6 +15,7 @@ const brands = [
     image: "/images/brands/shibaura.jpg",
     logo: "/images/brands/logos/shibaura-logo.svg",
     shortDescription: "High precision electric and servo hydraulic molding machines",
+    hasLogoOverlay: true,
   },
   {
     name: "Graham Engineering",
@@ -22,6 +23,7 @@ const brands = [
     image: "/images/brands/graham.jpg",
     logo: "/images/brands/logos/graham-logo.svg",
     shortDescription: "Stand-alone extruders, co-extruders and complete extrusion systems",
+    hasLogoOverlay: false,
   },
   {
     name: "Xaloy",
@@ -29,6 +31,7 @@ const brands = [
     image: "/images/brands/xaloy.jpg",
     logo: "/images/brands/logos/xaloy-logo.svg",
     shortDescription: "Screws, barrels and front-end components for extrusion and injection",
+    hasLogoOverlay: true,
   },
   {
     name: "Advantage Engineering",
@@ -36,6 +39,7 @@ const brands = [
     image: "/images/brands/advantage.jpg",
     logo: "/images/brands/logos/advantage-logo.png",
     shortDescription: "Industrial heat transfer products including chillers and temperature control",
+    hasLogoOverlay: true,
   },
   {
     name: "Rapid Granulator",
@@ -43,13 +47,15 @@ const brands = [
     image: "/images/brands/rapid.jpg",
     logo: "/images/brands/logos/rapid-logo.svg",
     shortDescription: "High-quality granulators for plastic recycling and size reduction",
+    hasLogoOverlay: false,
   },
   {
     name: "Novatec",
     slug: "novatec",
     image: "/images/brands/novatec.jpg",
-    logo: "/images/brands/logos/novatec-logo.svg",
+    logo: "/images/brands/logos/novatec-logo.png",
     shortDescription: "Resin dryers, conveying and blending systems for plastics",
+    hasLogoOverlay: true,
   },
   {
     name: "DynaCon",
@@ -57,14 +63,15 @@ const brands = [
     image: "/images/brands/dynacon.jpg",
     logo: "/images/brands/logos/dynacon-logo.svg",
     shortDescription: "Flexible modular conveyor systems for manufacturing",
+    hasLogoOverlay: true,
   },
-
   {
     name: "Sepro Group",
     slug: "sepro-group",
     image: "/images/brands/sepro.jpg",
     logo: "/images/brands/logos/sepro-logo.svg",
     shortDescription: "3-axis, 5-axis and 6-axis robots for injection molding",
+    hasLogoOverlay: true,
   },
   {
     name: "Bay Plastics Machinery",
@@ -72,6 +79,7 @@ const brands = [
     image: "/images/brands/bay-plastics.jpg",
     logo: "/images/brands/logos/bay-plastics-logo.png",
     shortDescription: "Strand pelletizers, conveyors, water baths and accessories",
+    hasLogoOverlay: false,
   },
   {
     name: "H-P Products",
@@ -79,6 +87,7 @@ const brands = [
     image: "/images/brands/hp-products.jpg",
     logo: "/images/brands/logos/hp-products-logo.png",
     shortDescription: "Tubing, bends, and fittings for vacuum conveying",
+    hasLogoOverlay: false,
   },
 ]
 
@@ -125,17 +134,19 @@ export default function LineCardPage() {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                {/* Logo Overlay */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-                  <div className="relative w-3/4 h-1/2">
-                    <Image
-                      src={brand.logo || "/placeholder.svg"}
-                      alt={`${brand.name} logo`}
-                      fill
-                      className="object-contain drop-shadow-lg"
-                    />
+                {/* Logo Overlay - only show for brands that need it */}
+                {brand.hasLogoOverlay && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+                    <div className="relative w-3/4 h-1/2">
+                      <Image
+                        src={brand.logo || "/placeholder.svg"}
+                        alt={`${brand.name} logo`}
+                        fill
+                        className="object-contain drop-shadow-lg"
+                      />
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
               <div className="p-4">
                 <h3 className="font-bold text-[#1a1a1a] text-lg mb-2 group-hover:text-[#367CA4] transition-colors">
