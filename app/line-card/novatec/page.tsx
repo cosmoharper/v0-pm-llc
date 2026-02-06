@@ -27,14 +27,50 @@ export default function NovatecPage() {
 
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Image */}
-          <div className="relative aspect-[4/3] bg-black rounded-lg overflow-hidden">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2818%29.png-46qxRq33UAwqhLLtFRpEldzXO8dGOM.jpeg"
-              alt="Novatec resin drying equipment"
-              fill
-              className="object-contain"
-            />
+          {/* Images */}
+          <div className="flex flex-col gap-4">
+            {/* Hero product image */}
+            <div className="relative aspect-[4/3] bg-[#0a0a0a] rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2818%29.png-46qxRq33UAwqhLLtFRpEldzXO8dGOM.jpeg"
+                alt="Novatec resin drying equipment"
+                fill
+                priority
+                className="object-contain"
+              />
+            </div>
+
+            {/* Additional product images */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="group rounded-lg overflow-hidden shadow-sm border border-border bg-background">
+                <div className="relative aspect-square overflow-hidden">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SVP%20%E2%80%98Silencer%E2%80%99%20Series%20Positive%20Displacement%20Pumps%20%281%29-ple4j1SPxIevtzOHGOCLS6nvZ2ZPWG.png"
+                    alt="Novatec SVP Silencer Series Positive Displacement Pumps"
+                    fill
+                    className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="px-3 py-2.5 border-t border-border bg-muted">
+                  <p className="text-xs font-semibold text-foreground leading-tight">SVP 'Silencer' Series</p>
+                  <p className="text-xs text-muted-foreground">Positive Displacement Pumps</p>
+                </div>
+              </div>
+              <div className="group rounded-lg overflow-hidden shadow-sm border border-border bg-background">
+                <div className="relative aspect-square overflow-hidden">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/VRX%20Series%20%281%29-Sj4FT1VfSCeQIGXnNZBgyeQME61oAo.png"
+                    alt="Novatec VRX Series vacuum receiver"
+                    fill
+                    className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="px-3 py-2.5 border-t border-border bg-muted">
+                  <p className="text-xs font-semibold text-foreground leading-tight">VRX Series</p>
+                  <p className="text-xs text-muted-foreground">Vacuum Receivers</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Content */}
@@ -56,7 +92,7 @@ export default function NovatecPage() {
             </ul>
 
             <p className="text-sm text-gray-600 mb-6 italic flex items-center gap-2">
-              Part of the <Image src="/images/maguire-logo.png" alt="Maguire" width={70} height={14} className="inline-block h-3.5 w-auto" /> Family.
+              Part of the <Image src="/images/maguire-logo.png" alt="Maguire" width={70} height={14} style={{ width: 'auto', height: '14px' }} className="inline-block" /> Family.
             </p>
 
             <div className="flex flex-wrap gap-4">
