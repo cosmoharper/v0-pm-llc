@@ -48,44 +48,41 @@ export default function DryingAndConveyingPage() {
 
           {/* Main Content */}
           <div className="flex-1">
-            <div className="mb-8 flex justify-center">
+            {/* Product Images Row */}
+            <div className="mb-8 flex flex-wrap items-end justify-center gap-6">
               <Image
                 src="/images/drying-conveying-head.png"
                 alt="Drying and Conveying Equipment"
-                width={250}
-                height={300}
+                width={220}
+                height={270}
                 className="h-auto"
               />
-            </div>
-
-            {/* Novatec Product Images */}
-            <div className="mb-8 flex justify-center gap-4">
-              <div className="group w-40 rounded-lg overflow-hidden shadow-sm border border-gray-200 bg-white">
+              <div className="group w-48 rounded-lg overflow-hidden shadow-sm border border-gray-200 bg-white">
                 <div className="relative aspect-square overflow-hidden">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SVP%20%E2%80%98Silencer%E2%80%99%20Series%20Positive%20Displacement%20Pumps%20%281%29-ple4j1SPxIevtzOHGOCLS6nvZ2ZPWG.png"
                     alt="Novatec SVP Silencer Series Positive Displacement Pumps"
                     fill
-                    className="object-contain p-3"
+                    className="object-contain p-4"
                   />
                 </div>
-                <div className="px-2 py-1.5 border-t border-gray-200 bg-gray-50">
-                  <p className="text-[10px] font-semibold text-[#1a1a1a] leading-tight">SVP 'Silencer' Series</p>
-                  <p className="text-[10px] text-gray-500">Positive Displacement Pumps</p>
+                <div className="px-3 py-2 border-t border-gray-200 bg-gray-50">
+                  <p className="text-xs font-semibold text-[#1a1a1a] leading-tight">SVP 'Silencer' Series</p>
+                  <p className="text-xs text-gray-500">Positive Displacement Pumps</p>
                 </div>
               </div>
-              <div className="group w-40 rounded-lg overflow-hidden shadow-sm border border-gray-200 bg-white">
+              <div className="group w-48 rounded-lg overflow-hidden shadow-sm border border-gray-200 bg-white">
                 <div className="relative aspect-square overflow-hidden">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/VRX%20Series%20%281%29-Sj4FT1VfSCeQIGXnNZBgyeQME61oAo.png"
                     alt="Novatec VRX Series vacuum receiver"
                     fill
-                    className="object-contain p-3"
+                    className="object-contain p-4"
                   />
                 </div>
-                <div className="px-2 py-1.5 border-t border-gray-200 bg-gray-50">
-                  <p className="text-[10px] font-semibold text-[#1a1a1a] leading-tight">VRX Series</p>
-                  <p className="text-[10px] text-gray-500">Vacuum Receivers</p>
+                <div className="px-3 py-2 border-t border-gray-200 bg-gray-50">
+                  <p className="text-xs font-semibold text-[#1a1a1a] leading-tight">VRX Series</p>
+                  <p className="text-xs text-gray-500">Vacuum Receivers</p>
                 </div>
               </div>
             </div>
