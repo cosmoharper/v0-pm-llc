@@ -92,7 +92,7 @@ export default function NovatecPage() {
             </ul>
 
             <p className="text-sm text-gray-600 mb-6 italic flex items-center gap-2">
-              Part of the <Image src="/images/maguire-logo.png" alt="Maguire" width={70} height={14} className="inline-block h-3.5 w-auto" /> Family.
+              Part of the <Image src="/images/maguire-logo.png" alt="Maguire" width={70} height={14} style={{ width: 'auto', height: '14px' }} className="inline-block" /> Family.
             </p>
 
             <div className="flex flex-wrap gap-4">
