@@ -27,14 +27,35 @@ export default function NovatecPage() {
 
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Image */}
-          <div className="relative aspect-[4/3] bg-black rounded-lg overflow-hidden">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2818%29.png-46qxRq33UAwqhLLtFRpEldzXO8dGOM.jpeg"
-              alt="Novatec resin drying equipment"
-              fill
-              className="object-contain"
-            />
+          {/* Images */}
+          <div className="flex flex-col gap-6">
+            <div className="relative aspect-[4/3] bg-black rounded-lg overflow-hidden">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Image%20%2818%29.png-46qxRq33UAwqhLLtFRpEldzXO8dGOM.jpeg"
+                alt="Novatec resin drying equipment"
+                fill
+                priority
+                className="object-contain"
+              />
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="relative aspect-square bg-white rounded-lg overflow-hidden border border-gray-200">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SVP%20%E2%80%98Silencer%E2%80%99%20Series%20Positive%20Displacement%20Pumps%20%281%29-ple4j1SPxIevtzOHGOCLS6nvZ2ZPWG.png"
+                  alt="Novatec SVP Silencer Series Positive Displacement Pumps"
+                  fill
+                  className="object-contain p-2"
+                />
+              </div>
+              <div className="relative aspect-square bg-white rounded-lg overflow-hidden border border-gray-200">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/VRX%20Series%20%281%29-Sj4FT1VfSCeQIGXnNZBgyeQME61oAo.png"
+                  alt="Novatec VRX Series vacuum receiver"
+                  fill
+                  className="object-contain p-2"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Content */}
