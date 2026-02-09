@@ -109,8 +109,7 @@ export default function LineCardPage() {
       <div className="bg-white py-6 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <a 
-            href="/PM204R-line-card.pdf"
-            download
+            href="/line-card-pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#367CA4] text-white px-6 py-3 font-medium hover:bg-[#2d6a8f] transition-colors"
