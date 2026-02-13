@@ -68,7 +68,7 @@ const brands = [
   {
     name: "Sepro Group",
     slug: "sepro-group",
-    image: "/images/brands/sepro.jpg",
+    image: "/images/brands/sepro-automation-cell.png",
     logo: "/images/brands/logos/sepro-logo.svg",
     shortDescription: "3-axis, 5-axis and 6-axis robots for injection molding",
     hasLogoOverlay: false,
