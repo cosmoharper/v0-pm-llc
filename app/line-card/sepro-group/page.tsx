@@ -28,12 +28,12 @@ export default function SeproGroupPage() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Image */}
-          <div className="relative aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
+          <div className="relative aspect-[4/3] bg-white rounded-lg overflow-hidden">
             <Image
-              src="/images/brands/sepro.jpg"
-              alt="Sepro Group robots for injection molding"
+              src="/images/brands/sepro-automation-cell.png"
+              alt="Sepro Group automation cell with robot system"
               fill
-              className="object-cover"
+              className="object-cover scale-100 bg-white"
             />
           </div>
 
