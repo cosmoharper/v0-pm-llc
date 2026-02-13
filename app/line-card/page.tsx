@@ -139,7 +139,7 @@ export default function LineCardPage() {
                   alt={brand.name}
                   fill
                   priority={["shibaura-machine", "graham-engineering", "xaloy", "advantage-engineering"].includes(brand.slug)}
-                  className={`${brand.slug === "novatec" ? "object-contain" : "object-cover"} ${brand.slug === "sepro-group" ? "scale-200" : ""} group-hover:scale-105 transition-transform duration-300`}
+                  className={`${brand.slug === "novatec" ? "object-contain" : "object-cover"} ${brand.slug === "sepro-group" ? "object-contain" : ""} group-hover:scale-105 transition-transform duration-300`}
                 />
                 {/* Logo Overlay - styled horizontal band similar to baked-in cards */}
                 {brand.hasLogoOverlay && (
