@@ -30,10 +30,10 @@ export default function SeproGroupPage() {
           {/* Image */}
           <div className="relative aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
             <Image
-              src="/images/brands/sepro.jpg"
-              alt="Sepro Group robots for injection molding"
+              src="/images/brands/sepro-automation-cell.png"
+              alt="Sepro Group automation cell with robot system"
               fill
-              className="object-cover"
+              className="object-contain bg-white"
             />
           </div>
 
